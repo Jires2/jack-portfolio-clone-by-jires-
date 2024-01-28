@@ -1,0 +1,39 @@
+.body__blog{
+    overflow: hidden;
+    padding-left: 8rem;
+}
+
+.body__blog__container{
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+}
+
+.body__blog__container>div{
+    display: flex;
+   flex-direction: row;
+   gap: 10rem;
+}
+
+.body__blog__container__article{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.body__blog__read-more{
+    margin: 2rem 3.5rem 9rem 2.5rem ;
+    text-align: right;
+}
+
+
+
+@media screen and (max-width:600px)  {
+    .body__blog{
+        padding-left: 3rem;
+    }
+
+    .body__blog__container>div{
+        flex-direction: column;
+    }
+}

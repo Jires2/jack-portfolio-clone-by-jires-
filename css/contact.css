@@ -1,0 +1,120 @@
+.body__contact{
+    padding-left: 8rem;
+    padding-bottom: 20rem;
+    margin-top: 8rem;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.body__contact__form{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.body__contact__form__container{
+    margin-top: 2rem;
+}
+
+.body__contact__form__container-half {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.body__contact__form__container-wide{
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    width: 100%;
+    font-size: 2rem;
+    padding: 2rem;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    background: #2b2b2b;
+    border: none;
+    color: #6b6b6b;
+}
+
+textarea{
+    height: 15rem;
+    display: block;
+}
+
+.input {
+    width: 100%;
+    position: relative;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+}
+
+.input::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: var(--main-blue-color);
+    position: absolute;
+    bottom: 0px; left: 0;
+    transition: width 0.5s ;
+    z-index: -1;
+}
+.input.active::after{
+    width: 100%;
+}
+
+.body__contact__form__container__button {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.body__contact__right {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1rem;
+}
+.body__contact__right__address{
+    padding: 2rem 3rem;
+    background: black;
+    width: 300px;
+}
+
+.body__contact__right__address span{
+    color: var(--main-blue-color);
+}
+
+
+@media screen and (max-width:1300px) {
+
+    .body__contact__form{
+        width: 95%;
+    }
+
+    .body__contact__right{
+        width: 95%;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .body__contact{
+        flex-direction: column;
+        padding-left: 3rem;
+    }
+
+    .body__contact__form{
+        width: 95%;
+    }
+
+    .body__contact__right{
+        width: 95%;
+    }
+}

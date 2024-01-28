@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        JJ | Front End Developer
+    </title>
+
+    <!-- CSS LINKS -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Awesomefont CNDS link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+<body>
+
+    <nav class="sidebar">
+
+        <div class="sidebar__logo">
+            <div class="sidebar__logo__svg">
+                <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="60.000000pt" height="72.000000pt" viewBox="0 0 53.000000 72.000000" preserveAspectRatio="xMidYMid meet">
+                    <metadata> Created by potrace 1.16, written by Peter Selinger 2001-2019 </metadata>
+                    <g transform="translate(-9,72.000000) scale(0.100000,-0.100000)" fill="#05fdd8" stroke="none">
+                        <path d="M380 442 c0 -318 -1 -322 -71 -322 -61 0 -89 40 -89 126 l0 45 -67
+    -3 -68 -3 3 -69 c6 -158 87 -225 256 -214 80 5 134 38 165 100 20 42 21 59 21
+    331 l0 287 -75 0 -75 0 0 -278z"></path>
+                    </g>
+                    <g transform="translate(0.000000,72.000000) scale(0.100000,-0.100000)" fill="#fd2155" stroke="none">
+                        <path d="M380 442 c0 -318 -1 -322 -71 -322 -61 0 -89 40 -89 126 l0 45 -67
+    -3 -68 -3 3 -69 c6 -158 87 -225 256 -214 80 5 134 38 165 100 20 42 21 59 21
+    331 l0 287 -75 0 -75 0 0 -278z"></path>
+                    </g>
+                </svg>
+            </div>
+            <div class="sidebar__logo__text">
+                <h2>Jack</h2>
+                <p>Web Developer</p>
+            </div>
+        </div>
+
+        <ul id="menu">
+            <a href="#about"><li class="nav-link">About</li></a>
+            <a href="#skills"><li class="nav-link">Work</li></a>
+            <a href="#work"><li class="nav-link">My Skills</li></a>
+            <a href="#blog"><li class="nav-link">Blog</li></a>
+            <a href="#contact"><li class="nav-link">Contact</li></a>
+        </ul>
+
+        <div class="sidebar__social">
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-solid fa-rss"></i></a>
+        </div>
+    </nav>
+
+    <aside class="right-context">
+        <div class="menu-button" id="menu-button">
+            <svg class="visible" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) -->
+                <path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path>
+            </svg>
+            <svg display="none" class="invisible" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"/></svg>
+        </div>
+        <div>
+            <div class="sound-pane">
+                <span id="sound-cloud" class="red-colored"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="soundcloud" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="svg-inline--fa fa-soundcloud fa-w-20 fa-5x">
+                        <path fill="currentColor" d="M111.4 256.3l5.8 65-5.8 68.3c-.3 2.5-2.2 4.4-4.4 4.4s-4.2-1.9-4.2-4.4l-5.6-68.3 5.6-65c0-2.2 1.9-4.2 4.2-4.2 2.2 0 4.1 2 4.4 4.2zm21.4-45.6c-2.8 0-4.7 2.2-5 5l-5 105.6 5 68.3c.3 2.8 2.2 5 5 5 2.5 0 4.7-2.2 4.7-5l5.8-68.3-5.8-105.6c0-2.8-2.2-5-4.7-5zm25.5-24.1c-3.1 0-5.3 2.2-5.6 5.3l-4.4 130 4.4 67.8c.3 3.1 2.5 5.3 5.6 5.3 2.8 0 5.3-2.2 5.3-5.3l5.3-67.8-5.3-130c0-3.1-2.5-5.3-5.3-5.3zM7.2 283.2c-1.4 0-2.2 1.1-2.5 2.5L0 321.3l4.7 35c.3 1.4 1.1 2.5 2.5 2.5s2.2-1.1 2.5-2.5l5.6-35-5.6-35.6c-.3-1.4-1.1-2.5-2.5-2.5zm23.6-21.9c-1.4 0-2.5 1.1-2.5 2.5l-6.4 57.5 6.4 56.1c0 1.7 1.1 2.8 2.5 2.8s2.5-1.1 2.8-2.5l7.2-56.4-7.2-57.5c-.3-1.4-1.4-2.5-2.8-2.5zm25.3-11.4c-1.7 0-3.1 1.4-3.3 3.3L47 321.3l5.8 65.8c.3 1.7 1.7 3.1 3.3 3.1 1.7 0 3.1-1.4 3.1-3.1l6.9-65.8-6.9-68.1c0-1.9-1.4-3.3-3.1-3.3zm25.3-2.2c-1.9 0-3.6 1.4-3.6 3.6l-5.8 70 5.8 67.8c0 2.2 1.7 3.6 3.6 3.6s3.6-1.4 3.9-3.6l6.4-67.8-6.4-70c-.3-2.2-2-3.6-3.9-3.6zm241.4-110.9c-1.1-.8-2.8-1.4-4.2-1.4-2.2 0-4.2.8-5.6 1.9-1.9 1.7-3.1 4.2-3.3 6.7v.8l-3.3 176.7 1.7 32.5 1.7 31.7c.3 4.7 4.2 8.6 8.9 8.6s8.6-3.9 8.6-8.6l3.9-64.2-3.9-177.5c-.4-3-2-5.8-4.5-7.2zm-26.7 15.3c-1.4-.8-2.8-1.4-4.4-1.4s-3.1.6-4.4 1.4c-2.2 1.4-3.6 3.9-3.6 6.7l-.3 1.7-2.8 160.8s0 .3 3.1 65.6v.3c0 1.7.6 3.3 1.7 4.7 1.7 1.9 3.9 3.1 6.4 3.1 2.2 0 4.2-1.1 5.6-2.5 1.7-1.4 2.5-3.3 2.5-5.6l.3-6.7 3.1-58.6-3.3-162.8c-.3-2.8-1.7-5.3-3.9-6.7zm-111.4 22.5c-3.1 0-5.8 2.8-5.8 6.1l-4.4 140.6 4.4 67.2c.3 3.3 2.8 5.8 5.8 5.8 3.3 0 5.8-2.5 6.1-5.8l5-67.2-5-140.6c-.2-3.3-2.7-6.1-6.1-6.1zm376.7 62.8c-10.8 0-21.1 2.2-30.6 6.1-6.4-70.8-65.8-126.4-138.3-126.4-17.8 0-35 3.3-50.3 9.4-6.1 2.2-7.8 4.4-7.8 9.2v249.7c0 5 3.9 8.6 8.6 9.2h218.3c43.3 0 78.6-35 78.6-78.3.1-43.6-35.2-78.9-78.5-78.9zm-296.7-60.3c-4.2 0-7.5 3.3-7.8 7.8l-3.3 136.7 3.3 65.6c.3 4.2 3.6 7.5 7.8 7.5 4.2 0 7.5-3.3 7.5-7.5l3.9-65.6-3.9-136.7c-.3-4.5-3.3-7.8-7.5-7.8zm-53.6-7.8c-3.3 0-6.4 3.1-6.4 6.7l-3.9 145.3 3.9 66.9c.3 3.6 3.1 6.4 6.4 6.4 3.6 0 6.4-2.8 6.7-6.4l4.4-66.9-4.4-145.3c-.3-3.6-3.1-6.7-6.7-6.7zm26.7 3.4c-3.9 0-6.9 3.1-6.9 6.9L227 321.3l3.9 66.4c.3 3.9 3.1 6.9 6.9 6.9s6.9-3.1 6.9-6.9l4.2-66.4-4.2-141.7c0-3.9-3-6.9-6.9-6.9z" class=""></path>
+                    </svg></span>
+                <p> <span class="sound-text">Sound</span> <span class="red-colored" id="sound-play-button">OFF</span>
+                </p>
+            </div>
+        </div>
+        <div class="awwwards">
+            <div>
+                <a href=""><img src="https://cdn.shopify.com/s/files/1/0164/2390/t/2/assets/awwwards_honorable_white_right.png?7286100469750561975" alt="awwwards"></a>
+            </div>
+        </div>
+    </aside>
+
+    <div class="loading">
+        <div class="loading__logo">
+                <div class="loading__logo-svg">
+                    <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="60.000000pt" height="72.000000pt" viewBox="0 0 53.000000 72.000000" preserveAspectRatio="xMidYMid meet">
+                        <metadata> Created by potrace 1.16, written by Peter Selinger 2001-2019 </metadata>
+                        <g transform="translate(-9,72.000000) scale(0.100000,-0.100000)" fill="#05fdd8" stroke="none">
+                            <path d="M380 442 c0 -318 -1 -322 -71 -322 -61 0 -89 40 -89 126 l0 45 -67
+        -3 -68 -3 3 -69 c6 -158 87 -225 256 -214 80 5 134 38 165 100 20 42 21 59 21
+        331 l0 287 -75 0 -75 0 0 -278z"></path>
+                        </g>
+                        <g transform="translate(0.000000,72.000000) scale(0.100000,-0.100000)" fill="#fd2155" stroke="none">
+                            <path d="M380 442 c0 -318 -1 -322 -71 -322 -61 0 -89 40 -89 126 l0 45 -67
+        -3 -68 -3 3 -69 c6 -158 87 -225 256 -214 80 5 134 38 165 100 20 42 21 59 21
+        331 l0 287 -75 0 -75 0 0 -278z"></path>
+                        </g>
+                    </svg>
+                </div>
+                <div class="loading__logo-text">
+                    <h2>Jack</h2>
+                    <p>Jack is thinking</p>
+                </div>
+            </div>
+        <div class="loading__progress-bar">
+            <progress class="loading__progress-bar__fill" max="100" value="0"></progress>
+        </div>
+    </div>
+
+    <main>
+        <div class="body html-tag tag">
+
+            <article id="about" class="body__about body-tag tag">
+
+                <div class="body__about__text">
+
+                    <div class="body__about__before tag">
+                    <p class="body__about__text__welcome h1-tag bouncer">
+                        <br>
+                        <span class="">H</span><span class="">i</span><span class="">,</span>
+                        <br>
+                        <span class="">I</span><span class="">'</span><span class="">m</span>
+                        <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53.000000 72.000000" preserveAspectRatio="xMidYMid meet">
+                            <metadata> Created by potrace 1.16, written by Peter Selinger 2001-2019 </metadata>
+                            <g transform="translate(-9,72.000000) scale(0.100000,-0.100000)" fill="#05fdd8" stroke="none">
+                                <path d="M380 442 c0 -318 -1 -322 -71 -322 -61 0 -89 40 -89 126 l0 45 -67
+                        -3 -68 -3 3 -69 c6 -158 87 -225 256 -214 80 5 134 38 165 100 20 42 21 59 21
+                        331 l0 287 -75 0 -75 0 0 -278z"></path>
+                            </g>
+                            <g transform="translate(0.000000,72.000000) scale(0.100000,-0.100000)" fill="#fd2155" stroke="none">
+                                <path d="M380 442 c0 -318 -1 -322 -71 -322 -61 0 -89 40 -89 126 l0 45 -67
+                        -3 -68 -3 3 -69 c6 -158 87 -225 256 -214 80 5 134 38 165 100 20 42 21 59 21
+                        331 l0 287 -75 0 -75 0 0 -278z"></path>
+                            </g>
+                        </svg><span class="">a</span><span class="">c</span><span class="">k</span><span class="">,</span>
+                        <br>
+                        <span class="">w</span><span class="">e</span><span class="">b</span>
+                        <span class="">d</span><span class="">e</span><span class="">v</span><span class="">e</span><span class="">l</span><span class="">o</span><span class="">p</span><span class="">e</span><span class="">r</span></p></div>
+                        
+                    <p class="body__about__text__profession tag scroll-appearance"><br><span>Front End Developer / WordPress Expert <br></span>
+                    </p>
+
+                    <div class="body__welcome__contact scroll-appearance">
+                        <div class="body__welcome__contact button">
+                            contact me!
+                            <div class="corner-cube"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="article--scroll_down">
+                    <div>
+                        <p>scroll down</p>
+                        <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="arrow-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-arrow-down fa-w-14 fa-5x">
+                            <path fill="currentColor" d="M443.5 248.5l-7.1-7.1c-4.7-4.7-12.3-4.7-17 0L241 419.9V44c0-6.6-5.4-12-12-12h-10c-6.6 0-12 5.4-12 12v375.9L28.5 241.4c-4.7-4.7-12.3-4.7-17 0l-7.1 7.1c-4.7 4.7-4.7 12.3 0 17l211 211.1c4.7 4.7 12.3 4.7 17 0l211-211.1c4.8-4.8 4.8-12.3.1-17z" class=""></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <p>scroll down</p>
+                        <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="arrow-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-arrow-down fa-w-14 fa-5x">
+                            <path fill="currentColor" d="M443.5 248.5l-7.1-7.1c-4.7-4.7-12.3-4.7-17 0L241 419.9V44c0-6.6-5.4-12-12-12h-10c-6.6 0-12 5.4-12 12v375.9L28.5 241.4c-4.7-4.7-12.3-4.7-17 0l-7.1 7.1c-4.7 4.7-4.7 12.3 0 17l211 211.1c4.7 4.7 12.3 4.7 17 0l211-211.1c4.8-4.8 4.8-12.3.1-17z" class=""></path>
+                        </svg>
+                    </div>
+                </div>
+
+            </article>
+
+            <article id="skills" class="body__skills">
+
+                <div class="article--filingran filingran--right">
+                    <p>Work</p>
+                </div>
+
+                <section class="body__skills__portfolio">
+                    <div>
+                        <p class="article__h tag bouncer">
+                            <span class="">M</span><span class="">y</span>
+                            <span class="">P</span><span class="">o</span><span class="">r</span><span class="">t</span><span class="">f</span><span class="">o</span><span class="">l</span><span class="">i</span><span class="">o</span>
+                        </p>
+                    </div>
+                    <div class="body__skills__portfolio__more">
+                        <div>
+                            <p class="body__skills__portfolio__more__p article__p tag">
+                                A small gallery of recent projects chosen by me.
+                                I've done them all together with amazing people from companies around the globe.
+                                It's only a drop in the ocean compared
+                                to the entire list. <br>
+                                Interested to see some more? Visit
+                                <span><a href="">my work</a></span> page.
+                            </p> 
+                        </div>
+                        <div class="button-container">
+                            <div class="button">See more!<div class="corner-cube"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="body__skills__galery tag">
+
+                    <div class="body__skills__galery__container">
+
+                        <div>
+                            <div style="background-image: url('https://jacekjeznach.com/wp-content/uploads/2017/10/Bez-nazwy-3-e1508357920340.jpg')">
+                                <div class="view-project">View <br>Project</div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div style="background-image: url('https://jacekjeznach.com/wp-content/uploads/2017/10/Bez-nazwy-3-e1508357920340.jpg')">
+                                <div class="view-project">View <br>Project</div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div style="background-image: url('https://jacekjeznach.com/wp-content/uploads/2017/10/Bez-nazwy-3-e1508357920340.jpg')">
+                                <div class="view-project">View <br>Project</div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div style="background-image: url('https://jacekjeznach.com/wp-content/uploads/2017/10/Bez-nazwy-3-e1508357920340.jpg')">
+                                <div class="view-project">View <br>Project</div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div style="background-image: url('https://jacekjeznach.com/wp-content/uploads/2017/10/Bez-nazwy-3-e1508357920340.jpg')">
+                                <div class="view-project">View <br>Project</div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div style="background-image: url('https://jacekjeznach.com/wp-content/uploads/2017/10/Bez-nazwy-3-e1508357920340.jpg')">
+                                <div class="view-project">View <br>Project</div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div style="background-image: url('https://jacekjeznach.com/wp-content/uploads/2017/10/Bez-nazwy-3-e1508357920340.jpg')">
+                                <div class="view-project">View <br>Project</div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div style="background-image: url('https://jacekjeznach.com/wp-content/uploads/2017/10/Bez-nazwy-3-e1508357920340.jpg')">
+                                <div class="view-project">View <br>Project</div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div style="background-image: url('https://jacekjeznach.com/wp-content/uploads/2017/10/Bez-nazwy-3-e1508357920340.jpg')">
+                                <div class="view-project">View <br>Project</div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div style="background-image: url('https://jacekjeznach.com/wp-content/uploads/2017/10/Bez-nazwy-3-e1508357920340.jpg')">
+                                <div class="view-project">View <br>Project</div>
+                            </div>
+                        </div>
+
+                </section>
+
+            </article>
+
+            <article class="body__work" id="work">
+                <div class="body__work__container">
+                    <section>
+                        <div>
+                            <p class="bouncer article__h tag">
+                                <span class="">M</span><span class="">e</span><span class="">,</span>
+                                <span class="">M</span><span class="let-bounce">y</span><span class="">s</span><span class="">e</span><span class="">l</span><span class="">f</span>
+                                <span class="">a</span><span class="">n</span><span class="">d</span>
+                                <span class="">I</span>
+                            </p>
+                        </div>
+                        <div class="body__work__container__text  tag article__p">
+                            <p class="paragraph">
+                                The primary area of my interest is front-end. My passion for code has begun when
+                                Adobe
+                                Flash was a complete innovation,
+                                alongside with CSS 1.0 and HTML 4.01 as standards of the current web.
+                                <br><br>
+                                For over a decade I had many opportunities to work in a vast spectrum of
+                                <span><a href="">web technologies</a></span> what let me gather a significant
+                                amount
+                                of
+                                various experience.
+                                Working for companies and individuals around the globe I met and learnt from
+                                amazing
+                                and
+                                ambitious people.<br><br>
+                                I currently work remotely with a selected freelance client base and are open for
+                                new
+                                opportunities.
+                            </p>
+                        </div>
+                        <div class="time-line">
+                            <img src="https://jacekjeznach.com/wp-content/themes/new/img/timeline.png" alt="">
+                        </div>
+                    </section>
+
+                    <section>
+                        <div id="tag-cloud"></div>
+                    </section>
+                </div>
+                <div class="article--scroll_down">
+                    <div>
+                        <p>scroll down</p>
+                        <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="arrow-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-arrow-down fa-w-14 fa-5x">
+                            <path fill="currentColor" d="M443.5 248.5l-7.1-7.1c-4.7-4.7-12.3-4.7-17 0L241 419.9V44c0-6.6-5.4-12-12-12h-10c-6.6 0-12 5.4-12 12v375.9L28.5 241.4c-4.7-4.7-12.3-4.7-17 0l-7.1 7.1c-4.7 4.7-4.7 12.3 0 17l211 211.1c4.7 4.7 12.3 4.7 17 0l211-211.1c4.8-4.8 4.8-12.3.1-17z" class=""></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <p>scroll down</p>
+                        <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="arrow-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-arrow-down fa-w-14 fa-5x">
+                            <path fill="currentColor" d="M443.5 248.5l-7.1-7.1c-4.7-4.7-12.3-4.7-17 0L241 419.9V44c0-6.6-5.4-12-12-12h-10c-6.6 0-12 5.4-12 12v375.9L28.5 241.4c-4.7-4.7-12.3-4.7-17 0l-7.1 7.1c-4.7 4.7-4.7 12.3 0 17l211 211.1c4.7 4.7 12.3 4.7 17 0l211-211.1c4.8-4.8 4.8-12.3.1-17z" class=""></path>
+                        </svg>
+                    </div>
+                </div>
+            </article>
+
+            <article class="body__blog" id="blog">
+                <div>
+                    <div class="article--filingran  filigran-left">
+                        <p>Blog</p>
+                    </div>
+
+                    <div class="body__blog__container">
+                        <div>
+                            <div class="body__blog__container__article article__tag tag scroll-appearance">
+                                <div class="body__blog__container__article__title">
+                                    <p class="article-title">The best Web Developer<br> - Questions &amp; Answers
+                                    </p>
+                                    <div>
+                                        <p class="date">APRIL 23, 2021</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="paragraph">If you want to hire a web developer right away without
+                                        reading, click
+                                        here
+                                        and
+                                        send
+                                        me a message! What is a web developer? Who is actually a...</p>
+                                </div>
+                                <div>
+                                    <p><a href="">Read more...</a></p>
+                                </div>
+                            </div>
+
+                    
+                            <div class="body__blog__container__article article__tag  tag scroll-appearance">
+                                <div class="body__blog__container__article__title">
+                                    <p class="article-title">Website design - how to start?</p>
+                                    <div>
+                                        <p class="date">MARCH 21, 2021</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="paragraph">Designing a website strats with defining the role the
+                                        website is meant to
+                                        serve,
+                                        or its purpose. You're guessing right - there are different of websites
+                                        that
+                                        are...</p>
+                                </div>
+                                <div>
+                                    <p><a href="">Read more...</a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="body__blog__container__article article__tag  tag scroll-appearance">
+                                <div class="body__blog__container__article__title">
+                                    <p class="article-title">Looking for a WordPress expert ?</p>
+                                    <div>
+                                        <p class="date">MARCH 14, 2021</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="paragraph">You need a WordPress expert in order to make your
+                                        website or online store
+                                        grow?
+                                        Or maybe you need someone to help you solve a problem with WordPress
+                                        or...
+                                    </p>
+                                </div>
+                                <div>
+                                    <p><a href="">Read more...</a></p>
+                                </div>
+                            </div>
+                            <div class="body__blog__container__article  tag article__tag scroll-appearance">
+                                <div class="body__blog__container__article__title">
+                                    <p class="article-title">How much does a WordPress website cost?</p>
+                                    <div>
+                                        <p class="date">MARCH 13, 2021</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="paragraph">If you want to hire a WordPress specialist right away
+                                        without reading,
+                                        click
+                                        here
+                                        and send me a message! When answering the question of how much does a...
+                                    </p>
+                                </div>
+                                <div>
+                                    <p><a href="">Read more...</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="body__blog__read-more">
+                        <p><a href="">Read more articles...</a></p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="body__contact tag body__tag" id="contact">
+
+                <section class="body__contact__form">
+                    <div class="">
+                        <div>
+                            <p class="article__h bouncer tag">
+                                <span class="">C</span><span class="">o</span><span class="">n</span><span class="">t</span><span class="">a</span><span class="">c</span><span class="">t</span>
+                                <span class="">m</span><span class="">e</span>
+                            </p>
+                        </div>
+                        
+                        <div class="article__p tag">
+                            <p class="paragraph">I'm interested in freelance opportunities - especially
+                                ambitious or large
+                                projects.
+                                However, if you have other request or question, don't hesitate to use the form.
+                            </p>
+                        </div>
+
+                    
+                        <div class="tag form__tag body__contact__form__container">
+                            <div>
+                                <div class="body__contact__form__container-half scroll-appearance">
+                                    <div class="input"><input type="text" name="" placeholder="Name"></div>
+                                    <div class="input"><input type="text" name="" placeholder="Email"></div>
+                                </div>
+
+                                <div class="body__contact__form__container-wide ">
+                                    <div class="input scroll-appearance"><input type="text" name="" placeholder="Subject"></div>
+                                    <div class="input scroll-appearance"><textarea name="" placeholder="Message"></textarea></div>
+                                </div>
+                            </div>
+
+                            <div class="body__contact__form__container__button scroll-appearance">
+                                <div class="button">Send message!<div class="corner-cube"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+
+                <section class="body__contact__right">
+                    <div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4760.217130717756!2d14.66584155000001!3d53.37710695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4700a7b61bb4cdb1%3A0x2f482ce2226812fa!2s70-786%20Szczecin%2C%20Pologne!5e0!3m2!1sfr!2scm!4v1705674160129!5m2!1sfr!2scm" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="body__contact__right__address scroll-appearance">
+                        <div>
+                            <p>Jacek Jeznack, <br>Poland, ul. Maciejowick <br>11/2, 70-786 Szczecin</p>
+                        </div>
+                        <br>
+                        <div>
+                            <p><span>@</span>: jeznacki13@gmail.com</p>
+                        </div>
+                    </div>
+                </section>
+            </article>
+
+        </div>
+    </main>
+
+
+</body>
+
+<!-- JS libs -->
+<script type="text/javascript" src="./javascript/lib/TagCloud.min.js"></script>
+<script src="./javascript/lib/gsap@3.12.5_dist_gsap.min.js"></script>
+<script src="./javascript/lib/code.jquery.com_jquery-3.7.1.min.js"></script>
+<script src="./javascript/lib/ScrollMagic.min.js"></script>
+<script src="./javascript/lib/scrollreveal.min.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script> -->
+
+<!-- JS -->
+<script src="./javascript/bouncer.js"></script>
+<script src="./javascript/form.js"></script> 
+<script src="./javascript/3D-sphere-tag.js"></script>
+<script src="./javascript/root-current.js"></script>
+<script src="./javascript/menu-button.js"></script>
+<script src="./javascript/prograss-bar.js"></script>
+<script src="./javascript/scroll.js"></script>
+
+</html>

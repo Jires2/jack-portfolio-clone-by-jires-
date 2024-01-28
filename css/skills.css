@@ -1,0 +1,103 @@
+.body__skills {
+    overflow: hidden;
+}
+
+.body__skills__portfolio {
+    margin-top: 8rem;
+    padding-left: 8rem;
+    padding-right: 3rem;
+}
+
+.body__skills__portfolio__more {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.body__skills__portfolio__more .button-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.body__skills__portfolio__more .button-container .button{
+    margin: 0;
+}
+
+/*  GALERY */
+
+.body__skills__galery::before {
+    content: '<section>';
+    left: 30px;
+}
+
+.body__skills__galery::after {
+    content: '</section>';
+    left: 30px;
+}
+
+.body__skills__galery__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.body__skills__galery__container>div {
+    width: 20%;
+    height: 18vw;
+    overflow: hidden;
+    min-width: 210px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.body__skills__galery__container>div>div{
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.body__skills__galery__container .view-project {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1d1d1d;
+    text-align: center;
+    background-color: var(--main-blue-color);
+    border-radius: 999px 999px 999px 999px;
+    width: 100px;
+    height: 100px;
+    transform: scale(0);
+
+    transition:  transform .3s;
+}
+
+.body__skills__galery__container>div:hover .view-project {
+    transform: scale(1);
+}
+
+
+.body__skills__galery__container>div>div:hover{
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width:600px){
+    .body__skills__portfolio__more{
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .body__skills__portfolio{
+        padding-left: 3rem;
+    }
+}

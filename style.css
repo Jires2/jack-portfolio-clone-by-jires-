@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url(./css/about.css);
+@import url(./css/bouncer.css);
+@import url(./css/scroll-down.css);
+@import url(./css/default.css);
+@import url(./css/skills.css);
+@import url(./css/mixte.css);
+@import url(./css/work.css);
+@import url(./css/tagCloud.css);
+@import url(./css/blog.css);
+@import url(./css/contact.css);
+@import url(./css/nav.css);
+@import url(./css/right-content.css);
+@import url(./css/progress-bar.css);
+
+*, *::before, *::after{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    position: relative;
+}
+
+:root {
+    --tags-color: #515152;
+    --input-color: #8d8d8d;
+    --main-blue-color: #08fdd8;
+    --main-pink-color: #fd1056;
+
+    --transition: all, .3s ease;
+
+    --indent-2: 20px;
+    --indent-4: 40px;
+    --indent-6: 60px ;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 2rem;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #222222;
+    color: white;
+}
+
+.visible{
+    display: block;
+}
+.invisible{
+    position: absolute;
+}
+
+@media screen and (max-width:800px) {
+    html{
+        font-size: 55%;
+    }
+    .tag-cloud .tagcloud{ 
+        width: 200px;
+        height: 200px;
+    }
+}
